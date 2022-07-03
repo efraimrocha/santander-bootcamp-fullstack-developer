@@ -46,6 +46,10 @@ header .list-items{
     color: white;
 }
 
+.menu{
+    color: white;
+}
+
 header .menu{
     justify-content: space-between;
     
@@ -107,4 +111,63 @@ header .menu{
 #quem-somos p{
     margin-bottom: 10px;
     width: 90%;
+}
+
+#quem-somos img{
+    width: 420px;
+}
+
+.container-externo{
+    background-color: darkblue;
+    width: 100%;
+}
+
+#servicos{
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 100px;
+
+}
+
+#servicos h2{
+    color: white;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.list-servicos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-servicos .item-servico{
+    text-align: center;
+}
+
+.item-servico a{
+    width: 220;
+    background-color: white;
+    border-radius: 30px;
+    height: 50px;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 50px;
+    padding: 5px 10px;
+    color: darkblue;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: 700;
+
+}
+
+.item-servico p{
+    font-weight: 700;
+    font-size: 18px;
+    color: #ffff;
+    margin-top: 20px;
+}
+
+.item-servico img{
+    width: 80%;
+    margin: auto;
 }
