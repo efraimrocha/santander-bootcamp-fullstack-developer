@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos align-content</title>
+    <style>
+        .container{
+            height: 400px;
+            max-width: 300px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+        }
+        .item{
+            background-color: rosybrown;
+            padding: 0 5px;
+            flex: 1;
+            text-align: center;
+            color: white;
+            margin: 5px;
+        }
+        .stretch{
+            align-items: stretch;
+        }
+
+        .center{
+            align-content: center;
+        }
+
+        .flex-start{
+            align-content: flex-start;
+        }
+        .flex-end{
+            align-content: flex-end;
+        }
+        .space-around{
+            align-content: space-around;
+        }
+        .space-between{
+            align-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <p>stre</p>
+    <div class="container stretch">
+        <div class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, rareprehenderit.</div>
+        <div class="item">>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, ratione veniam</div>
+        <div class="item">i porro animi err</div>
+        <div class="item">Lorem ipsniam. Ut itaque placeat, dolore distinctio nostrum adipis</div>
+        <div class="item">t itaque placeat, dolore distinct</div>
+        <div class="item">Lorem ipsum dae delectus illo ipsa!Lorem</div>
+        <div class="item"> ut hopsa repellat</div>
+    </div>
+
+    <p>Center</p>
+    <div class="container center">
+        <div class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, rati reprehenderit.</div>
+        <div class="item">>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, ratione veniam</div>
+        <div class="item">i porro animi err</div>
+        <div class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, ratione veniam. Ut itaque placeat, dolore distinctio nostrum adipis</div>
+        <div class="item">t itaque placeat, dolore distinct</div>
+        <div class="item">Lorem ipm cum quaerat quae delectus illo ipsa!Lorem</div>
+        <div class="item"> ut harum cum quaerat quae delectus illo ipsa!LoremLorem ipsum dolor sit amet consectetur adipisicing elit. Dolore autem itaque nam ipsa repellat</div>
+    </div>
+
+    
+    <p>flex-start</p>
+    <div class="container flex-start">
+        <div class="item">Loremequi reprehenderit.</div>
+        <div class="item">>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, ratione veniam</div>
+        <div class="item">i porro animi err</div>
+        <div class="item">Lor  ratione veniam. Ut itaque placeat, dolore distinctio nostrum adipis</div>
+        <div class="item">t itaque placeat, dolore distinct</div>
+        <div class="item">Lorem um cum quaerat quae delectus illo ipsa!Lorem</div>
+        <div class="item"> ut harum cum quaerat quae delectus illo ipsa!LoremLorem ipsum  ipsa repellat</div>
+    </div>
+
+    <p>flex-end</p>
+    <div class="container flex-end">
+        <div class="item">Lorepisci porro animi error deleniti odit eveniet ea optio laborum, non sequi reprehenderit.</div>
+        <div class="item">>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, ratione veniam</div>
+        <div class="item">i porro animi err</div>
+        <div class="item">Lor ratione veniam. Ut itaque placeat, dolore distinctio nostrum adipis</div>
+        <div class="item">t itaque placeat, dolore distinct</div>
+        <div class="item">Lorem  cum quaerat quae delectus illo ipsa!Lore</div>
+        <div class="item"> ut harum cum quaerat quae delectus illo ipsa!LoremLorem ipsum dolor sit amet consectetur adipisicing elit. Dolore autem itaque nam ipsa repellat</div>
+    </div>
+
+    <p>space-around</p>
+    <div class="container space-around">
+        <div class="item">Lorepisci porro animi error deleniti odit eveniet ea optio laborum, non sequi reprehenderit.</div>
+        <div class="item">>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, ratione veniam</div>
+        <div class="item">i porro animi err</div>
+        <div class="item">Lor ratione veniam. Ut itaque placeat, dolore distinctio nostrum adipis</div>
+        <div class="item">t itaque placeat, dolore distinct</div>
+        <div class="item">Lorem  cum quaerat quae delectus illo ipsa!Lore</div>
+        <div class="item"> ut harua repem  cum quaerat quae deleellat</div>
+    </div>
+
+    <p>space-between</p>
+    <div class="container space-between">
+        <div class="item">Lorepisci porro animi error deleniti odit eveniet ea optio laborum, non sequi reprehenderit.</div>
+        <div class="item">>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, ratione veniam</div>
+        <div class="item">i porro animi err</div>
+        <div class="item">Lor ratione veniam. Ut itaque placeat, dolore distinctio nostrum adipis</div>
+        <div class="item">t itaque placeat, dolore distinct</div>
+        <div class="item">Lorem  cum quaerat quae delectus illo ipsa!Lore</div>
+        <div class="item"> ut harua repem  cum quaerat quae deleellat</div>
+    </div>
+</body>
+</html>

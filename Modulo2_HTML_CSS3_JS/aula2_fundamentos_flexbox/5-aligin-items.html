@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos aligin-items</title>
+
+    <style>
+
+        .container{
+            max-width: 350px;
+            border: 10px solid black;
+            display: flex;
+        }
+
+        .item{
+            background-color: blueviolet;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            flex: 1;
+        }
+
+        .flex{
+            flex: 1;
+        }
+        .center{
+            align-items: center;
+        } 
+        .stretch{
+            align-items: stretch;
+        }
+
+        .start{
+            align-items: flex-start;
+        }
+
+        .end{
+            align-items: flex-end ;
+        }
+
+        .baseline{
+            align-items: baseline;
+        }
+
+        .column{
+            flex-direction: column;
+        }
+
+        .central{
+            height: 300px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .central .item{
+            flex: 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Center</h1>
+    <section class="container center">
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque recusandae repellat ducimus harum asperiores, nam tenetur aliquam quo, nihil placeat animi totam praesentium incidunt, dese.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur sapiente accusamus quas hic dignissimos, aliquam, fuga neque praesentium itaque harum consectetur unde dolor ex omnis porro eos, deserunt nulla atque.</div>
+        <div class="item">eum? Ipsam unde cum autem necessitatibus perferendis hic est illo dignissimos quibusdam exercitationem.</div>
+    </section>
+
+    <h1>strectch</h1>
+    <section class="container stretch">
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque recusandae repellat ducimus harum asperiores, nam tenetur aliquam quo, nihil placeat animi totam praesentium incidunt, dese.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur sapiente accusamus quas hic dignissimos, aliquam, fuga neque praesentium itaque harum consectetur unde dolor ex omnis porro eos, deserunt nulla atque.</div>
+        <div class="item">eum? Ipsam unde cum autem necessitatibus perferendis hic est illo dignissimos quibusdam exercitationem.</div>
+    </section>
+
+    <h1>flex-start</h1>
+    <section class="container start">
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque recusandae repellat ducimus harum asperiores, nam tenetur aliquam quo, nihil placeat animi totam praesentium incidunt, dese.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur sapiente accusamus quas hic dignissimos, aliquam, fuga neque praesentium itaque harum consectetur unde </div>
+        <div class="item">eum? Ipsam unde cum autem necessitatibus perferendis hic est illo dignissimos quibusdam exercitationem.</div>
+    </section>
+
+    <h1>flex-end</h1>
+    <section class="container end">
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque recusandae repellat ducimus harum asperiores, nam tenetur aliquam quo, nihil placeat animi totam praesentium incidunt, dese.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur sapiente accusamus quas hic dignissimos, aliquam, fuga neque praesentium itaque harum consectetur unde </div>
+        <div class="item">eum? Ipsam unde cum autem necessitatibus perferendis hic est illo dignissimos quibusdam exercitationem.</div>
+    </section>
+
+    <h1>baseline</h1>
+    <section class="container baseline">
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br> Cumque recusandae repellat ducimus harum asperiores, nam tenetur aliquam quo, nihil placeat animi totam praesentium incidunt, dese.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur sapiente accusamus quas hic dignissimos, aliquam, fuga neque praesentium itaque harum consectetur unde </div>
+        <div class="item">easdgasdfha adfh fdh <dfn></dfn>
+    </section>
+
+    <br><br><br>
+
+    <h1>Columns</h1>
+
+    <h1>flex-center (Columns)</h1>
+    <section class="container center column">
+        <div class="item">Lorem ipsum dolor sit ame.</div>
+        <div class="item">Lorem ipsum dolor sconsectetur unde </div>
+        <div class="item">easdgasdfha adfh fdh <dfn></dfn>
+    </section>
+
+    <h1>flex-start</h1>
+    <section class="container start column">
+        <div class="item">Lorem ipsum dolor sit ame.</div>
+        <div class="item">Lorem ipsum dolor sconsectetur unde </div>
+        <div class="item">easdgasdfha adfh fdh <dfn></dfn>
+    </section>
+
+    <h1>flex-end</h1>
+    <section class="container end column">
+        <div class="item">Lorem ipsum dolor sit ame.</div>
+        <div class="item">Lorem ipsum dolor sconsectetur unde </div>
+        <div class="item">easdgasdfha adfh fdh <dfn></dfn>
+    </section>
+
+    <h1>baseline</h1>
+    <section class="container baseline column">
+        <div class="item">Lorem ipsum dolor sit ame.</div>
+        <div class="item">Lorem ipsum dolor sconsectetur unde </div>
+        <div class="item">easdgasdfha adfh fdh <dfn></dfn>
+    </section>
+
+    <h1>Alinhamento central a tela</h1>
+    <section class="container central center">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit veniam ipsam laudantium blanditiis laborum libero quaerat, est nisi. Veritatis ad iure vel saepe ea, aperiam odio numquam sit amet perferendis!</div>
+    </section>
+</body>
+</html>
